@@ -50,6 +50,12 @@ describe(`comparing values`, ()=>{
 
 
 describe('Car class', () => {
+    let prius
+    beforeEach(() => {
+      prius = new Car('prius', 'toyota')
+    })
+    // beforeAll, afterEach, afterAll
+
     it('exists', () => {
         // 0- start with tests in the green
         // 1- write simplest possible failing test
@@ -58,17 +64,21 @@ describe('Car class', () => {
         expect(Car).toBeDefined()
       })
       it('has a model prop prius', () => {
-          const prius = new Car('prius')
+        //   const prius = new Car('prius')
         expect(prius).toHaveProperty('model', 'prius')
       })
       it('has a make prop totota', () => {
-        const prius = new Car('prius', 'toyota')
+        // const prius = new Car('prius', 'toyota')
         expect(prius.make).toBe('toyota')
       })
       it('has an odometer at 0 miles', () => {
-        const miata = new Car('miata', 'mazda', )
-        // empty test is a false positive
-        expect(miata.odometer).toEqual(0)
-        expect(miata.odometer).toBe(0)
+        // const miata = new Car('miata', 'mazda', )
+        // // empty test is a false positive
+        // expect(miata.odometer).toEqual(0)
+        // expect(miata.odometer).toBe(0)
+        expect(prius.odometer).toBe(0)
+      })
+      it('has a drive method that takes distance and inc odometer', () => {
+        
       })
 })
