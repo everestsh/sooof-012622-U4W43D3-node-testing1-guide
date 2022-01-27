@@ -14,7 +14,10 @@ function makeObj() {
         this.make = make
         this.model = model
         this.odometer = 0
-      }
+    }
+    drive(distance) {
+        this.odometer = this.odometer + distance
+    }
   }
 module.exports = {
     makeFive,
