@@ -69,5 +69,6 @@ describe('Car class', () => {
         const miata = new Car('miata', 'mazda', )
         // empty test is a false positive
         expect(miata.odometer).toEqual(0)
+        expect(miata.odometer).toBe(0)
       })
 })
