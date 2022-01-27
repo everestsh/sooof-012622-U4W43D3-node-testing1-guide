@@ -1,6 +1,6 @@
 // Test away!
 
-const { makeFive , makeFour, makeObj} = require('./car')
+const { makeFive , makeFour, makeObj, Car} = require('./car')
 test('sanity', ()=>{
     expect(true).toBe(true)
 })
@@ -46,4 +46,15 @@ describe(`comparing values`, ()=>{
         // expect(o).toEqual({ name: 'lady gaga' }) // NOT VERY RESILIENT
         // expect(o).toMatchObject({ name: 'lady gaga' })
     })
+})
+
+
+describe('Car class', () => {
+    it('exists', () => {
+        // 0- start with tests in the green
+        // 1- write simplest possible failing test
+        // 2- write simplest code that will pass test
+        // 3- reward yourself refactoring
+        expect(Car).toBeDefined()
+      })
 })

@@ -9,8 +9,10 @@ function makeFour(){
 function makeObj() {
     return {}
   } 
+  class Car {}
 module.exports = {
     makeFive,
     makeFour,
-    makeObj
+    makeObj,
+    Car
 }
