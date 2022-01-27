@@ -10,10 +10,9 @@ function makeObj() {
     return {}
   } 
   class Car {
-    constructor(model) {
-        // this.make = make
+    constructor(model, make) {
+        this.make = make
         this.model = model
-        // this.odometer = 0
       }
   }
 module.exports = {

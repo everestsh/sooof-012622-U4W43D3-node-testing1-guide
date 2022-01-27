@@ -57,8 +57,12 @@ describe('Car class', () => {
         // 3- reward yourself refactoring
         expect(Car).toBeDefined()
       })
-      it('has a model prop', () => {
+      it('has a model prop prius', () => {
           const prius = new Car('prius')
         expect(prius).toHaveProperty('model', 'prius')
+      })
+      it('has a make prop totota', () => {
+        const prius = new Car('prius', 'toyota')
+        expect(prius.make).toBe('toyota')
       })
 })
