@@ -9,7 +9,11 @@ function makeFour(){
 function makeObj() {
     return {}
   } 
-  class Car {}
+  class Car {
+    constructor() {
+        this.model = `prius`
+      }
+  }
 module.exports = {
     makeFive,
     makeFour,
