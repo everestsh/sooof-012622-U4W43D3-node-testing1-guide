@@ -17,16 +17,33 @@ class Car {
             setTimeout(() => {
                 this.odometer += distance;
                 resolve();
-            }, 5 * distance);
+            }, 50 * distance);
         });
     }
 }
 
+setTimeout(() => {
+    console.log('hello')
+}, 5 );
+
+const pp = new Promise( resolve=>{
+    console.log("resolve")
+    resolve();
+})
+pp.then()
+
+let p = Promise.resolve(5)
+f(p)
+function f(p){
+    p.then(value => console.log(value))
+}
 
 
-// let car = new Car('Tesla', 'Model S');
-// car.driveAsync()
-//     .then(() => {})
+let car = new Car('Tesla', 'Model S');
+car.driveAsync()
+    .then(() => {
+        console.log("car  make")
+    })
 
 
 module.exports = Car
